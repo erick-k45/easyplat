@@ -1,0 +1,44 @@
+ <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>EasyPlat</title>
+        <link rel="shortcut icon" href="img/icon.png" /> 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
+	<script src="js/respond.min.js"></script> <![endif]--> 		
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/plantilla.css">
+        <script src = "js/jquery-3.3.1.min.js"></script>
+        <link rel='stylesheet' id='plantilla'  href='icomoon/style.css' type='text/css' media='all' /></head>
+    <div class="barra_superior">
+        <div class="datos_barra"><a href="">Datos de la empresa e iconos</a></div>
+        <!--<span class="icon-twitter"></span><span class="icon-youtube"></span>-->
+        <div class="iconos_barra"><a href="https://www.facebook.com/easyplatmx/" style="font-size:15px;"><span class="icon-facebook2"></span></a></div>
+    </div>
+<script type="text/javascript">
+$(document).ready(main);
+ 
+var contador = 1;
+ 
+function main(){
+    $('.menu_bar').click(function(){
+        // $('nav').toggle(); 
+ 
+        if(contador == 1){
+            $('nav').animate({
+                left: '0'
+            });
+            contador = 0;
+        } else {
+            contador = 1;
+            $('nav').animate({
+                left: '-100%'
+            });
+        }
+ 
+    });
+ 
+};
+</script>
